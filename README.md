@@ -1,30 +1,27 @@
 # Server-Template
-Para facilitar as coisas, use com inteligencia!
+Para facilitar as coisas!
 
 Passo 1: Configuração do Ambiente.
 1.1. Instale o Node.js e o npm no seu sistema.
 
 Passo 2: Inicialização do Projeto.
 2.1. Crie um diretório para o projeto.
-2.2. Execute npm init para criar um arquivo package.json e siga as instruções.
+2.2. Execute npm install para instalar as dependencias (atualmente já estão configurados no package.json: nodemon, express, jsonwebtoken, bcrypt, pg, date-fns, axios e qs).
 
-Passo 3: Instalação de Pacotes.
-3.1. Instale os pacotes necessários, incluindo express, pg, jsonwebtoken e bcrypt:
+Passo 3: Configuração do Banco de Dados.
+3.1. Configure a conexão com o banco de dados PostgreSQL usando o pacote pg.
+3.2. Crie as tabelas necessárias para armazenar os dados de usuários.
 
-Passo 4: Configuração do Banco de Dados.
-4.1. Configure a conexão com o banco de dados PostgreSQL usando o pacote pg.
-4.2. Crie as tabelas necessárias para armazenar os dados de usuários.
+Passo 4: Criação de Rotas.
+4.1. Crie rotas para registrar usuários, fazer login e proteger rotas com autenticação JWT.
 
-Passo 5: Criação de Rotas.
-5.1. Crie rotas para registrar usuários, fazer login e proteger rotas com autenticação JWT.
+Passo 5: Registro de Usuários.
+5.1. Crie uma rota para o registro de novos usuários.
+5.2. Use o pacote bcrypt para criptografar as senhas dos usuários antes de armazená-las no banco de dados.
 
-Passo 6: Registro de Usuários.
-6.1. Crie uma rota para o registro de novos usuários.
-6.2. Use o pacote bcrypt para criptografar as senhas dos usuários antes de armazená-las no banco de dados.
-
-Passo 7: Autenticação de Usuários.
-7.1. Crie uma rota para o login de usuários.
-7.2. Valide as credenciais dos usuários e gere um token JWT se as credenciais estiverem corretas.
+Passo 6: Autenticação de Usuários.
+6.1. Crie uma rota para o login de usuários.
+6.2. Valide as credenciais dos usuários e gere um token JWT se as credenciais estiverem corretas.
 
 Passo 8: Proteção de Rotas
 8.1. Utilize middlewares para proteger as rotas que exigem autenticação.
