@@ -1,5 +1,5 @@
 # Server-Template
-Para facilitar as coisas, use com inteligencia!
+Para facilitar as coisas!
 
 Passo 1: Configuração do Ambiente.
 1.1. Instale o Node.js e o npm no seu sistema.
