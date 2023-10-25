@@ -6,7 +6,7 @@ const pool = new Pool({
   host: "localhost",
   database: "sua_base_de_dados",
   password: "sua_senha",
-  port: "sua-porta-de-entrada", //La ele 1000X ** 2
+  port: "numero-da-porta", //geralmente = 5432
 });
 
 module.exports = pool;
